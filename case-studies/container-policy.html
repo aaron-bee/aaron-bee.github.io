@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Container Security Policy & Standards | Aaron Brown</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body class="case-page">
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="../index.html">AB<span>.</span></a>
+    <a class="back-link" href="../index.html#case-studies">← Back to portfolio</a>
+  </div>
+</header>
+<main>
+  <section class="case-hero">
+    <div class="container">
+      <p class="section-kicker">CASE STUDY · 03</p>
+      <h1>Container Security Policy & Standards</h1>
+      <p class="hero-copy">Translating industry guidance into practical requirements engineering teams can implement and security teams can assess.</p>
+    </div>
+  </section>
+  <section>
+    <div class="container case-body">
+      <aside class="case-meta">
+        <p><strong>Focus</strong><br>NIST 800-190 · Containers · Secure SDLC · Governance</p>
+        <p><strong>Environment</strong><br>Docker · Kubernetes · Private registries · CI/CD</p>
+        <p><strong>Role</strong><br>Security leadership, architecture, governance, and risk translation</p>
+      </aside>
+      <article class="case-content">
+        <h2>Challenge</h2>
+        <p>High-level security frameworks are useful for governance but often too abstract for engineering teams. The challenge is converting framework language into enforceable, testable requirements.</p>
+        <h2>Approach</h2>
+        <p>Map framework objectives to concrete controls covering trusted images, registry use, vulnerability scanning, tagging, secrets, runtime isolation, workload identity, configuration, and lifecycle management.</p>
+        <h2>Security principles</h2>
+        <ul><li>Use trusted and controlled image sources</li><li>Scan before deployment and continuously after deployment</li><li>Pin versions and avoid uncontrolled mutable tags</li><li>Apply least privilege to workloads and service identities</li><li>Separate sensitive workloads and data appropriately</li></ul>
+        <h2>Outcome</h2>
+        <p>A standards structure that supports auditability while remaining actionable for platform and application engineering teams.</p>
+        <h2>Leadership takeaway</h2>
+        <p>Security standards succeed when engineers can tell exactly what good looks like and how compliance will be measured.</p>
+      </article>
+    </div>
+  </section>
+</main>
+<footer><div class="container footer-wrap"><span>© <span id="year"></span> Aaron Brown</span><span>Cybersecurity Portfolio</span></div></footer>
+<script src="../script.js"></script>
+</body>
+</html>
