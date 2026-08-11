@@ -1,15 +1,12 @@
 # Aaron Brown — Cybersecurity Portfolio
 
-Personal cybersecurity portfolio site built for GitHub Pages.
+Portfolio focus:
+- Enterprise Multi-Cloud Security Governance
+- CNAPP Governance & Security Automation
+- Enterprise Security Risk Translation & Governance
+- Cloud Security Ownership & Risk Accountability
+- Enterprise Security Standards & Control Engineering
 
-## Local preview
+Built for GitHub Pages.
 
-Open `index.html` directly in your browser, or use the VS Code Live Server extension.
-
-## Deploy
-
-This repository is intended for GitHub Pages using the `main` branch and `/ (root)` folder.
-
-Site URL:
-
-https://aaron-bee.github.io
+Live site: https://aaron-bee.github.io
