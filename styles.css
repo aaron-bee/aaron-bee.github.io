@@ -38,7 +38,7 @@ nav { display: flex; gap: 24px; }
 nav a { color: var(--muted); font-size: .92rem; }
 nav a:hover { color: var(--text); }
 
-.hero { padding: 110px 0 85px; background: radial-gradient(circle at 80% 20%, rgba(97,218,251,.12), transparent 35%); }
+.hero { padding: 82px 0 68px; background: radial-gradient(circle at 80% 20%, rgba(97,218,251,.12), transparent 35%); }
 .hero-grid { display: grid; grid-template-columns: 1.35fr .65fr; gap: 70px; align-items: center; }
 .eyebrow, .section-kicker { font-family: "JetBrains Mono", monospace; font-size: .8rem; letter-spacing: .12em; font-weight: 600; }
 h1 { font-size: clamp(3.5rem, 8vw, 6.5rem); margin: 5px 0 0; letter-spacing: -.05em; line-height: .95; }
@@ -111,4 +111,33 @@ footer { border-top: 1px solid var(--line); padding: 28px 0; color: var(--muted)
   .card-grid, .case-grid, .arch-row { grid-template-columns: 1fr; }
   .contact-box { align-items: flex-start; flex-direction: column; }
   .hero { padding-top: 80px; }
+}
+
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+.impact-card {
+  padding: 24px;
+  background: linear-gradient(180deg, rgba(17,36,58,.95), rgba(11,23,40,.95));
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+.impact-card strong {
+  display: block;
+  color: var(--accent);
+  font-size: 1.45rem;
+  margin-bottom: 10px;
+}
+.impact-card p {
+  color: var(--muted);
+  margin: 0;
+}
+@media (max-width: 1000px) {
+  .impact-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 850px) {
+  .impact-grid { grid-template-columns: 1fr; }
 }
