@@ -967,3 +967,284 @@ footer {
   }
 
 }
+/* =========================================================
+   FEATURED PROJECT
+   ========================================================= */
+
+.featured-project-section {
+  overflow: hidden;
+}
+
+.featured-project {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 64px;
+  align-items: center;
+
+  padding: 42px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(18, 39, 63, 0.98),
+      rgba(8, 20, 34, 0.98)
+    );
+
+  border: 1px solid var(--border);
+  border-radius: 18px;
+}
+
+.project-label {
+  margin-bottom: 14px;
+
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+
+  letter-spacing: 0.14em;
+
+  color: var(--accent);
+}
+
+.featured-project h3 {
+  margin-top: 0;
+  margin-bottom: 18px;
+
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.05;
+}
+
+.project-lead {
+  font-size: 1.08rem;
+  line-height: 1.7;
+
+  color: var(--text);
+}
+
+.featured-project-content > p:not(.project-lead):not(.project-disclaimer) {
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.project-capabilities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+
+  margin: 26px 0;
+}
+
+.project-capabilities span {
+  padding: 7px 11px;
+
+  border: 1px solid var(--border);
+  border-radius: 999px;
+
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.68rem;
+
+  color: var(--muted);
+  background: rgba(5, 15, 27, 0.45);
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  margin-top: 26px;
+}
+
+.project-disclaimer {
+  margin-top: 20px;
+
+  font-size: 0.75rem;
+  line-height: 1.6;
+
+  color: var(--muted);
+}
+
+
+/* Application Preview */
+
+.project-window {
+  overflow: hidden;
+
+  background: #071321;
+
+  border: 1px solid var(--border);
+  border-radius: 14px;
+
+  box-shadow:
+    0 30px 70px rgba(0, 0, 0, 0.35);
+}
+
+.project-window-bar {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  min-height: 42px;
+  padding: 0 14px;
+
+  background: #0d1d30;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.project-window-bar > span {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: var(--muted);
+  opacity: 0.45;
+}
+
+.project-window-bar small {
+  margin-left: 8px;
+
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.62rem;
+
+  color: var(--muted);
+}
+
+.project-preview {
+  padding: 25px;
+}
+
+.preview-heading span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.62rem;
+
+  letter-spacing: 0.12em;
+
+  color: var(--accent);
+}
+
+.preview-heading strong {
+  font-size: 1.35rem;
+}
+
+.preview-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 9px;
+
+  margin: 22px 0;
+}
+
+.preview-metrics div {
+  padding: 14px;
+
+  background: #10243b;
+
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.preview-metrics span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  font-size: 0.62rem;
+
+  color: var(--muted);
+}
+
+.preview-metrics strong {
+  font-size: 1.4rem;
+}
+
+.preview-flow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 6px;
+
+  margin: 22px 0;
+}
+
+.preview-flow div {
+  padding: 8px 9px;
+
+  background: #10243b;
+
+  border: 1px solid var(--border);
+  border-radius: 6px;
+
+  font-size: 0.62rem;
+  font-weight: 700;
+}
+
+.preview-flow > span {
+  color: var(--accent);
+}
+
+.preview-record {
+  padding: 16px;
+
+  background: #10243b;
+
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+}
+
+.preview-record > span {
+  display: block;
+
+  margin-bottom: 7px;
+
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.62rem;
+
+  color: var(--accent);
+}
+
+.preview-record strong {
+  display: block;
+
+  margin-bottom: 5px;
+
+  font-size: 1.05rem;
+}
+
+.preview-record small {
+  color: var(--muted);
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+  .featured-project {
+    grid-template-columns: 1fr;
+    gap: 36px;
+
+    padding: 28px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .featured-project {
+    padding: 22px;
+  }
+
+  .preview-flow {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+}
