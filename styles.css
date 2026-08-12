@@ -578,3 +578,392 @@ footer {
   }
 
 }
+/* =========================================================
+   EDUCATION & CERTIFICATIONS
+   ========================================================= */
+
+.credentials-section {
+  background:
+    radial-gradient(
+      circle at 70% 20%,
+      rgba(104, 94, 255, 0.08),
+      transparent 35%
+    ),
+    var(--bg-soft);
+}
+
+.credentials-intro {
+  max-width: 760px;
+  margin-top: -12px;
+  margin-bottom: 34px;
+  font-size: 1.05rem;
+  color: var(--muted);
+}
+
+
+/* Main two-column layout */
+
+.credentials-layout {
+  display: grid;
+  grid-template-columns: 0.78fr 1.22fr;
+  gap: 22px;
+}
+
+
+/* Shared panels */
+
+.education-panel,
+.certifications-panel {
+  padding: 24px;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(15, 30, 49, 0.98),
+      rgba(8, 19, 34, 0.98)
+    );
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+
+.credentials-panel-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 22px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #8a7dff;
+}
+
+.panel-icon {
+  font-size: 1.25rem;
+}
+
+
+/* =========================================================
+   EDUCATION TIMELINE
+   ========================================================= */
+
+.education-timeline {
+  position: relative;
+  padding-left: 18px;
+}
+
+.education-timeline::before {
+  content: "";
+  position: absolute;
+  top: 34px;
+  bottom: 34px;
+  left: 8px;
+  width: 1px;
+  background:
+    linear-gradient(
+      180deg,
+      #685eff,
+      rgba(104, 94, 255, 0.25)
+    );
+}
+
+.education-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 78px 1fr;
+  gap: 18px;
+  padding: 22px 0 32px 22px;
+}
+
+.education-item:last-child {
+  padding-bottom: 12px;
+}
+
+.education-marker {
+  position: absolute;
+  left: -17px;
+  top: 47px;
+  width: 14px;
+  height: 14px;
+  background: #685eff;
+  border-radius: 50%;
+  box-shadow:
+    0 0 14px rgba(104, 94, 255, 0.6);
+}
+
+.education-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  background: #f4f7ff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #07111f;
+}
+
+.education-content h4 {
+  margin: 0 0 4px;
+  font-size: 1.2rem;
+}
+
+.education-degree {
+  margin: 0 0 6px;
+  color: #9589ff;
+  font-weight: 600;
+}
+
+.education-major {
+  margin: 0 0 6px;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--muted);
+}
+
+.education-school {
+  margin: 0 0 14px;
+  color: var(--muted);
+}
+
+.education-date {
+  display: inline-block;
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   CERTIFICATION GRID
+   ========================================================= */
+
+.certification-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.cert-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 245px;
+  padding: 18px 14px 0;
+  overflow: hidden;
+  text-align: center;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(16, 31, 50, 0.98),
+      rgba(8, 18, 31, 0.98)
+    );
+  border: 1px solid rgba(105, 128, 160, 0.45);
+  border-radius: 14px;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-3px);
+  border-color: #685eff;
+  box-shadow:
+    0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+.cert-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 14px;
+  background: #f4f7ff;
+  border: 2px solid rgba(255, 255, 255, 0.65);
+  border-radius: 50%;
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #07111f;
+}
+
+.cert-card h4 {
+  margin: 0 0 6px;
+  font-size: 1.25rem;
+}
+
+.cert-card p {
+  flex: 1;
+  margin: 0 0 16px;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.cert-status {
+  margin: 0 -14px;
+  padding: 10px;
+  border-top: 1px solid rgba(105, 128, 160, 0.25);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.77rem;
+}
+
+.cert-status.earned {
+  color: #7cf2c8;
+}
+
+.cert-status.progress {
+  color: #9589ff;
+}
+
+
+/* Microsoft-style placeholder */
+
+.microsoft-logo {
+  background:
+    linear-gradient(
+      135deg,
+      #f35325 0%,
+      #f35325 48%,
+      transparent 48%,
+      transparent 52%,
+      #81bc06 52%,
+      #81bc06 100%
+    );
+  color: white;
+}
+
+
+/* Six Sigma */
+
+.sigma-logo {
+  font-size: 1.6rem;
+  color: #5ca846;
+}
+
+
+/* Growth card */
+
+.growth-card {
+  border-color: rgba(104, 94, 255, 0.5);
+}
+
+.growth-logo {
+  font-size: 1.8rem;
+  color: #9589ff;
+  background: transparent;
+  border-color: #685eff;
+}
+
+
+/* =========================================================
+   COMMITTED TO GROWTH BANNER
+   ========================================================= */
+
+.growth-banner {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 22px;
+  align-items: center;
+  margin-top: 22px;
+  padding: 22px 26px;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(15, 30, 49, 0.98),
+      rgba(8, 18, 31, 0.98)
+    );
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+
+.growth-banner-icon {
+  font-size: 2.3rem;
+  color: #8a7dff;
+}
+
+.growth-banner-copy strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #8a7dff;
+  font-size: 0.95rem;
+}
+
+.growth-banner-copy p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.growth-banner-button {
+  padding: 11px 18px;
+  border: 1px solid #8a7dff;
+  border-radius: 8px;
+  white-space: nowrap;
+  font-weight: 700;
+  color: #a89eff;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.growth-banner-button:hover {
+  background: #8a7dff;
+  color: #07111f;
+}
+
+
+/* =========================================================
+   CREDENTIALS RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+  .credentials-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .certification-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+}
+
+
+@media (max-width: 850px) {
+
+  .certification-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .growth-banner {
+    grid-template-columns: auto 1fr;
+  }
+
+  .growth-banner-button {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  .certification-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education-item {
+    grid-template-columns: 60px 1fr;
+  }
+
+  .education-logo {
+    width: 56px;
+    height: 56px;
+    font-size: 0.8rem;
+  }
+
+}
